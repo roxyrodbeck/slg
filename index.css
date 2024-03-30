@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;  
+  }
+
+html, body {
+    background-color: gray;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url("slg-background4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-attachment: fixed;
+    font-family: "Proza Libre", sans-serif;
+}
+
+nav, .topnav {
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-right: 2rem;
+    position: fixed;
+    right: 0;
+}
+
+
+#nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 240, 161);
+}
+
+li {
+    padding: 1rem;
+}
+
+li:hover {
+    transform: scale(1.2);
+    transition: all 300ms ease;
+}
+
+section {
+    display: flex;
+    padding-top: 10vh;
+    height: 100vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeBag {
+    border: 4px solid rgb(123, 122, 117);
+    box-shadow: 0 32px 7px rgba(68, 77, 136, 0.2);
+    filter: grayscale(100%);
+    transition: all 500ms ease-in-out;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.homeBag:hover {
+    filter: grayscale(0%);
+    transition: all 500ms ease-in-out;
+}
+
+.welcome-text {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(123, 122, 117);
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+.profilepic {
+    height: 20rem;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 240, 161);
+    box-shadow: 10px 5px 5px rgb(47, 98, 102);
+}
+
+#about  {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 90vh;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -3rem;
+}
+
+.quote {
+    height: 3rem;
+    width: 15rem;
+    border: 2px solid black;
+    background-color: white;
+    filter:opacity(50%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.aboutparagraph {
+    position: relative;
+    filter: opacity(100%);
+    gap: 1rem;
+    height: 3rem;
+    width: 15rem;
+}
+
+.click {
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.container {
+    background-color: rgb(123, 122, 117, 0.5);
+    border-radius: 5%;
+    width: 85%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(69, 70, 77, 0.2);
+}
+
+.img-gallery {
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-left: 18px;
+    margin-top: -2.5rem;
+}
+
+.img-gallery img {
+    border-radius: 5%;
+    width: 90%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    filter: grayscale(100%)
+}
+
+.img-gallery img:hover {
+    transform: scale(1.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(69, 70, 77, 0.2);
+    transition: all 300ms ease-in-out;
+    filter: grayscale(0%)
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: alltransform 300ms ease-in-out;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.full-img span {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.shopOnline {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(123, 122, 117);
+}
