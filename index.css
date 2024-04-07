@@ -28,8 +28,8 @@ nav, .topnav {
     margin-right: 2rem;
     position: fixed;
     right: 0;
+    z-index: 1;
 }
-
 
 #nav-links {
     display: flex;
@@ -215,3 +215,157 @@ section {
     color: white;
     text-shadow: 1px 1px 2px rgb(123, 122, 117);
 }
+
+.contact-form {
+    padding: 15px 0 15px 15px;
+}
+
+.contact-details input {
+    width: 40%;
+    border-radius: 5px;
+    border: 0px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+#contact > form {
+    margin-left: 10rem;
+    width: 50vw;
+    height: 80vh;
+    /* border: 2px solid rgb(123, 122, 117); */
+}
+
+input {
+    padding: 0 15px 15px 0;
+    background-image: linear-gradient(to right, rgb(223, 223, 223), white);
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+#msg::placeholder {
+    padding: 15px;
+}
+  
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+  
+.message textarea {
+    border-radius: 5px;
+    border: 0px;
+    background-image: linear-gradient(to right, rgb(223, 223, 223), white);
+}
+
+label {
+    margin: 10px 0 10px 0;
+}
+
+.message button {
+    border: 0;
+    border-radius: 5px;
+    background: rgb(123, 122, 117);
+    width: 140px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+  
+.message button:hover {
+    background: rgb(255, 240, 161);
+    color: rgb(123, 122, 117);
+    transition: 0.5s;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.socials {
+    color: white;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #home {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+
+    html, body {
+        background: url("slg-background4.jpg");
+        background-position: center;
+        background-size: cover;
+        min-height: 100%;
+        height: auto;
+        width: 100%;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+    #about {
+      flex-wrap: wrap;
+    }
+
+    .welcome-text {
+        margin-top: 10rem;
+    }
+
+    .shopOnline {
+        display: none;
+    }
+
+    .container {
+        background-color: transparent;
+        box-shadow: none;
+        margin-left: -90px;
+        
+    }
+
+    #contact {
+        height: fit-content;
+        width: 90vw;
+      }
+
+    .contact-form {
+        width: fit-content;
+        margin-top: 20rem;
+        margin-left: -90px;
+    }
+    
+    .contact-details input {
+        width: 50%;
+        height: auto;
+    }
+
+    .img-gallery {
+        flex-wrap: wrap;
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+  }
