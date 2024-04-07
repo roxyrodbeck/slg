@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slg.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <nav>
         <div class="topnav">
         <ul id="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a class="home" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#shop">Shop</a></li>
@@ -76,11 +76,36 @@
     </section>
 
     <section id="contact">
-        <h2>Embed contact form here.</h2>
+    
+        <form action="slgassets/contact.php" method="POST" class="contact-form">
+
+            <div class="contact-details">
+
+                <label class="form-label" for="name">Name</label>
+                <br><input type="text" name="name" id="yourname" placeholder="Your name">
+
+                <br><label class="form-label" for="subject">Subject</label>
+                <br><input type="text" name="subject" id="subject" placeholder="Message subject">
+            
+                <br><label class="form-label" for="email">Email Address</label>
+                <br><input type="email" name="email" placeholder="email@example.com" id="email" placeholder="Your email address">
+
+        </div>
+
+    <div class="message">
+
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="10" placeholder="Let us know how we can be of service."></textarea>
+        <button type="submit">Submit</button>
+
+    </div>
+        
+        </form>
+
     </section>
 
 
 
-    <script src="index.js"></script>
+    <script src="slg.js"></script>
 </body>
 </html>
