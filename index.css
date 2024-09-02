@@ -21,7 +21,7 @@ body {
     font-family: "Proza Libre", sans-serif;
 }
 
-nav, .topnav {
+nav {
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -67,9 +67,9 @@ section {
 
 #home {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .homeBag {
@@ -88,13 +88,22 @@ section {
 }
 
 .welcome-text {
+    display: flex;
+    flex-flow: column wrap;
     color: white;
+    justify-content: center;
+    text-align: left;
     text-shadow: 1px 1px 2px rgb(123, 122, 117);
     position: absolute;
-    top: 30%;
+    top: 50%;
     right: 30%;
+    margin-left: 30px;
 }
-.profilepic {
+.profile-pic {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     height: 20rem;
     width: auto;
     border-radius: 50%;
@@ -104,16 +113,18 @@ section {
 
 #about  {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 90vh;
 }
 
 .profile {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 1rem;
     margin-top: -3rem;
 }
@@ -128,7 +139,7 @@ section {
     border-radius: 1rem;
 }
 
-.aboutparagraph {
+.about-paragraph {
     position: relative;
     filter: opacity(100%);
     gap: 1rem;
@@ -216,6 +227,14 @@ section {
     text-shadow: 1px 1px 2px rgb(123, 122, 117);
 }
 
+#contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .contact-form {
     padding: 15px 0 15px 15px;
 }
@@ -229,9 +248,9 @@ section {
 }
 
 #contact > form {
-    margin-left: 10rem;
-    width: 50vw;
-    height: 80vh;
+    /* margin-left: 10rem; */
+    width: 70vw;
+    /* height: 80vh; */
     /* border: 2px solid rgb(123, 122, 117); */
 }
 
@@ -319,6 +338,14 @@ li {
 
     }
 
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        overflow-x: hidden;
+
+    }
+
     nav {
         display: none;
     }
@@ -326,12 +353,19 @@ li {
     .home {
         display: none;
     }
-    #about {
-      flex-wrap: wrap;
+
+    #home {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .welcome-text {
-        margin-top: 10rem;
+  .welcome-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
 
     .shopOnline {
@@ -345,27 +379,40 @@ li {
         
     }
 
+    .profile {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: -110px;
+    }
+
     #contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
         height: fit-content;
-        width: 90vw;
+        margin-top: 700px;
       }
 
     .contact-form {
         width: fit-content;
-        margin-top: 20rem;
-        margin-left: -90px;
+        margin-top: 15rem;
+        margin-left: -45px;
     }
     
     .contact-details input {
-        width: 50%;
+        width: 70%;
         height: auto;
     }
+
+    .message {
+        width: 75%;
+    }
+
 
     .img-gallery {
         flex-wrap: wrap;
     }
 
-    .welcome-text {
-        text-align: center;
-    }
   }
