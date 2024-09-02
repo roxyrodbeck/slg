@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/slgassets/index.css">
+    <link rel="stylesheet" href="slg.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -16,38 +16,38 @@
 <body>
 
     <nav>
-        <div class="topnav">
+
         <ul id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <!--<li><a href="#shop">Shop</a></li>-->
             <li><a href="#contact">Contact</a></li>
         </ul>
-        </div>
+
     </nav>
 
     <section id="home">
 
-        <div class="welcome">
-        <img class="homeBag" src="/slgassets/home-bag.png">
+
+        <img class="homeBag" src="home-bag.png">
         <div class="welcome-text">
             <h1>Unique pieces.</h1>
             <h2>Handcrafted in Houston, Texas.</h2>
-        </div>
+
         </div>
     </section>
 
     <section id="about">
 
         <div class="profile">
-            <img class="profilepic" src="/slgassets/stephen-face.jpg"/>
+            <img class="profile-pic" src="stephen-face.jpg"/>
 
         <div class="quote">
-            <div class="aboutparagraph">
+            <div class="about-paragraph">
              <p>I like nice shit, have good taste, and make what I want.</p>
              <p>Buy it. Or not.</p>
             </div>
+        </div>
         </div>
     </section>
 
@@ -55,25 +55,20 @@
         <div class="container">
             <p class="click">Click for full image.</p>
             <div class="full-img" id="fullImgBox">
-                <img src="/slgassets/image-1.jpg" id="fullImg">
+                <img src="assets/images/image-1.jpg" id="fullImg">
                 <span onclick="closeFullImg()">X</span>
             </div>
             <div class="img-gallery">
-                <img src="/slgassets/image-1.jpg" onclick="openFullImg('/slgassets/full-image-1.jpg')">
-                <img src="/slgassets/image-2.jpg" onclick="openFullImg('/slgassets/full-image-2.jpg')">
-                <img src="/slgassets/image-3.jpg" onclick="openFullImg('/slgassets/full-image-3.jpg')">
-                <img src="/slgassets/image-4.jpg" onclick="openFullImg('/slgassets/full-image-4.jpg')">
-                <img src="/slgassets/image-5.jpg" onclick="openFullImg('/slgassets/full-image-5.jpg')">
-                <img src="/slgassets/image-6.jpg" onclick="openFullImg('/slgassets/full-image-6.jpg')">
+                <img src="assets/image-1.jpg" onclick="openFullImg('full-image-1.jpg')">
+                <img src="assets/image-2.jpg" onclick="openFullImg('full-image-2.jpg')">
+                <img src="assets/image-3.jpg" onclick="openFullImg('full-image-3.jpg')">
+                <img src="assets/image-4.jpg" onclick="openFullImg('full-image-4.jpg')">
+                <img src="assets/image-5.jpg" onclick="openFullImg('full-image-5.jpg')">
+                <img src="assets/image-6.jpg" onclick="openFullImg('full-image-6.jpg')">
             </div>
         </div>
     </section>
 
-    <section id="shop">
-        <div class="shopOnline">
-        <h2>Embed store front of Stephen's choice here.</h2>
-        </div>
-    </section>
 
     <section id="contact">
     
@@ -106,6 +101,6 @@
 
 
 
-    <script src="/slgassets/index.js"></script>
+    <script src="slg.js"></script>
 </body>
 </html>
